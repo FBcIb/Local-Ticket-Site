@@ -1,0 +1,18 @@
+<html>
+    <body>
+        <h1>Ticket submission</h1>
+        <form action="" method="post" nonvalidate>
+            {{ form.hidden_tag() }}
+            <p>
+                {{ form.requester.label }}<br>
+                {{ form.requester(size=32) }}<br>
+            </p>
+            <p>
+                {{ form.request.label }}<br>
+                {{ form.request(size=32) }}<br>
+            </p>
+            <p>{{ form.urgency() }} {{ form.urgency.label }}</p>
+            <p>{{ form.submit() }}</p>
+        </form>
+    </body>
+</html>
